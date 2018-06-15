@@ -14,15 +14,9 @@ public class FirstHelpWindow extends JFrame {
     private JPanel menuPanel;
     
     public FirstHelpWindow() {
-        
- 
-   
-
-
-
 
         setResizable(false);
-        
+        setBounds(500, 50, 360, 640);
        
       
       
