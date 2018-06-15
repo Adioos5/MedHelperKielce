@@ -20,9 +20,9 @@ public class MenuWindow extends JFrame {
         ImageIcon firstHelpBackground = new ImageIcon("images/text3353.png");
         ImageIcon healthMapBackground = new ImageIcon("images/mapa zdr.png");
 
-        menuPanel = new JPanel();
+        menuPanel = new MenuWindowBackgroundGraphics();
 
-        setBounds(500, 100, 360, 640);
+        setBounds(500, 50, 360, 640);
         setTitle("Med Helper Kielce");
 
         firstAid = new JButton("");
