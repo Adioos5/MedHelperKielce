@@ -1,24 +1,24 @@
+package menu;
 
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 import javax.swing.JButton;
+import javax.swing.JPanel;
 
-import javax.swing.JButton;
-
-import javax.swing.JButton;
+import healthMap.HealthMapWindow;
 
 public class MenuWindowMechanics implements ActionListener {
 
-    private JButton firstHelp;
+    private JButton firstAid;
     private JButton healthMap;
-  
+ 
 
-    public MenuWindowMechanics(JButton firstHelp, JButton healthMap) {
-        this.firstHelp = firstHelp;
+    public MenuWindowMechanics(JButton firstAid, JButton healthMap) {
+        this.firstAid = firstAid;
         this.healthMap = healthMap;
-        
+  
 
     }
 
@@ -26,10 +26,11 @@ public class MenuWindowMechanics implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         
         if (e.getSource() == healthMap) {
-            System.out.println("Mapa zdrowia");
+        System.out.println("Mapa zdrowia");    
+            
         }
         
-        if (e.getSource() == firstHelp) {
+        if (e.getSource() == firstAid) {
             System.out.println("Otworzenie pierwszej pomocy");
         }
         
