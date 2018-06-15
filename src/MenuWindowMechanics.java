@@ -1,4 +1,4 @@
-package menu;
+
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -6,9 +6,6 @@ import java.io.IOException;
 import java.net.URISyntaxException;
 
 import javax.swing.JButton;
-
-import firstHelp.FirstHelpWindow;
-import healthMap.HealthMapWindow;
 
 public class MenuWindowMechanics implements ActionListener {
 
@@ -43,8 +40,16 @@ public class MenuWindowMechanics implements ActionListener {
 
         if (e.getSource() == firstAid) {
             System.out.println("Otworzenie pierwszej pomocy");
-            FirstHelpWindow faw;
-            faw = new FirstHelpWindow();
+            FirstHelpWindow faw = null;
+            try {
+                faw = new FirstHelpWindow();
+            } catch (URISyntaxException e1) {
+                // TODO Auto-generated catch block
+                e1.printStackTrace();
+            } catch (IOException e1) {
+                // TODO Auto-generated catch block
+                e1.printStackTrace();
+            }
             faw.run();
         }
 

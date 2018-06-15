@@ -1,4 +1,4 @@
-package menu;
+
 
 import java.awt.image.BufferedImage;
 import java.io.IOException;
@@ -22,7 +22,7 @@ public class MenuWindow extends JFrame {
         ImageIcon firstHelpBackground = new ImageIcon("images/text3353.png");
         ImageIcon healthMapBackground = new ImageIcon("images/mapa zdr.png");
 
-        menuPanel = new MenuWindowBackgroundGraphics();
+        menuPanel = new WindowsGraphics("menu");
 
         setBounds(500, 50, 360, 640);
         setTitle("Med Helper Kielce");

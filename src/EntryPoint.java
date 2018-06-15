@@ -2,8 +2,6 @@ import java.io.IOException;
 import java.net.URISyntaxException;
 import java.net.URL;
 
-import menu.MenuWindow;
-
 public class EntryPoint {
 
     
