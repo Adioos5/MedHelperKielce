@@ -14,11 +14,13 @@ public class WindowsGraphics extends JPanel {
 
     private BufferedImage img;
     private BufferedImage img2;
+    private BufferedImage googleMap;
     private String windowType;
     
     public WindowsGraphics(String windowType) throws URISyntaxException, IOException {       
         img = ImageIO.read(new File("images/tlo.png"));
         img2 = ImageIO.read(new File("images/text2029.png"));
+        googleMap = ImageIO.read(new File("images/Mapa.png"));
         this.windowType = windowType;
     }
 
@@ -33,6 +35,7 @@ public class WindowsGraphics extends JPanel {
         }
         if(windowType.equals("health map")) {
             g.drawImage(img, 0, 0, 360, 640, null, null);
+            g.drawImage(googleMap, 0, 0, 360, 540, null, null);
         }
     }
 }
