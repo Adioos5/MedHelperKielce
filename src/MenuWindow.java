@@ -9,8 +9,8 @@ public class MenuWindow extends JFrame{
     private JButton settings;
     
     public MenuWindow() {
-        setLocationRelativeTo(null);
-        setSize(400,550);
+        
+        setBounds(500,100,400,550);
         setTitle("Med Helper Kielce");
         
         firstHelp = new JButton("Pierwsza pomoc");
