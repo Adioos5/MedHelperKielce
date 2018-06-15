@@ -25,12 +25,12 @@ public class MenuWindowMechanics implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         
-        if (e.getSource() == firstHelp) {
-            
+        if (e.getSource() == healthMap) {
+            System.out.println("Mapa zdrowia");
         }
         
-        if (e.getSource() == healthMap) {
-
+        if (e.getSource() == firstHelp) {
+            System.out.println("Otworzenie pierwszej pomocy");
         }
         
         
