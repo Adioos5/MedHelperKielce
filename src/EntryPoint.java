@@ -1,8 +1,8 @@
 public class EntryPoint {
 
     public static void main(String[] args) {
-        new MenuWindow();
-        
+        MenuWindow mw = new MenuWindow();
+        mw.run();
     }
 
 }

@@ -1,53 +1,54 @@
 
-import java.awt.image.BufferedImage;
 import java.net.URL;
 
-import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
+import javax.swing.JPanel;
 
 public class MenuWindow extends JFrame{
 
     private JButton firstHelp;
     private JButton healthMap;
-    private JButton settings;
-    private URL url;
-    BufferedImage img;
+    
+   
+    private JPanel mainPanel;
+    private JPanel menuPanel;
     
     public MenuWindow() {
             
-        ImageIcon img = new ImageIcon("images/mazeBackground.jpg");
-       
+        ImageIcon firstHelpBackground = new ImageIcon("images/text3353.png");
+        ImageIcon healthMapBackground = new ImageIcon("images/mapa zdr.png");
         
-        setBounds(500,100,360,650);
+        menuPanel = new JPanel();
+        
+        setBounds(500,100,360,640);
         setTitle("Med Helper Kielce");
         
-        firstHelp = new JButton("Pierwsza pomoc");
-        healthMap = new JButton("Mapa zdrowia");
+        firstHelp = new JButton("");
+        healthMap = new JButton("");
        
         
-        healthMap.setBounds(50,200,300,100);
-        firstHelp.setBounds(50,350,300,100);
-      
-<<<<<<< HEAD
-        healthMap.setBackground(Color.CYAN);
+        healthMap.setBounds(30,300,300,100);
+        firstHelp.setBounds(30,450,300,100);
+
        
-=======
-        healthMap.setIcon(img);
-        firstHelp.setIcon(img);
->>>>>>> 48c794d3b7ed8b40a43f3e60520e8a6e9b5861b6
+        firstHelp.setIcon(firstHelpBackground);
+        healthMap.setIcon(healthMapBackground);
         
-        firstHelp.addActionListener(new MenuWindowMechanics(firstHelp,healthMap,settings));
-        healthMap.addActionListener(new MenuWindowMechanics(firstHelp,healthMap,settings));
-       
+        firstHelp.addActionListener(new MenuWindowMechanics(firstHelp,healthMap));
+        healthMap.addActionListener(new MenuWindowMechanics(firstHelp,healthMap));
         
-        setLayout(null);//!!!
+        menuPanel.add(firstHelp);
+        menuPanel.add(healthMap);
+        menuPanel.setLayout(null);
         
-        add(firstHelp);
-        add(healthMap);
         setResizable(false);
-        setVisible(true);
     }
-   
+    public void run() {
+        mainPanel = menuPanel;
+        add(mainPanel);
+        setVisible(true);
+        
+    }
 }

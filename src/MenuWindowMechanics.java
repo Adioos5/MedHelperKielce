@@ -15,7 +15,7 @@ public class MenuWindowMechanics implements ActionListener {
     private JButton healthMap;
   
 
-    public MenuWindowMechanics(JButton firstHelp, JButton healthMap, JButton settings) {
+    public MenuWindowMechanics(JButton firstHelp, JButton healthMap) {
         this.firstHelp = firstHelp;
         this.healthMap = healthMap;
         
