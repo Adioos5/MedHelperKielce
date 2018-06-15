@@ -1,4 +1,4 @@
-package Menu;
+
 import javax.swing.JButton;
 import javax.swing.JFrame;
 
