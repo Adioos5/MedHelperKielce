@@ -1,8 +1,9 @@
+import Menu.MenuWindow;
 
 public class EntryPoint {
 
     public static void main(String[] args) {
-        System.out.println("klklsdsd");
+        new MenuWindow();
 
     }
 
