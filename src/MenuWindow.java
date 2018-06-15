@@ -13,7 +13,7 @@ public class MenuWindow extends JFrame{
     
     public MenuWindow() {
         
-        setBounds(500,100,400,550);
+        setBounds(500,100,360,650);
         setTitle("Med Helper Kielce");
         
         firstHelp = new JButton("Pierwsza pomoc");
@@ -24,6 +24,7 @@ public class MenuWindow extends JFrame{
         firstHelp.setBounds(50,350,300,100);
       
         healthMap.setBackground(Color.CYAN);
+       
         
         firstHelp.addActionListener(new MenuWindowMechanics(firstHelp,healthMap,settings));
         healthMap.addActionListener(new MenuWindowMechanics(firstHelp,healthMap,settings));
@@ -33,8 +34,7 @@ public class MenuWindow extends JFrame{
         
         add(firstHelp);
         add(healthMap);
-       
-        
+        setResizable(false);
         setVisible(true);
     }
    
