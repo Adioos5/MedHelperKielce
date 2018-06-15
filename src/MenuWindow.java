@@ -36,8 +36,8 @@ public class MenuWindow extends JFrame {
         firstAid.setIcon(firstHelpBackground);
         healthMap.setIcon(healthMapBackground);
 
-        firstAid.addActionListener(new MenuWindowMechanics(firstAid, healthMap));
-        healthMap.addActionListener(new MenuWindowMechanics(firstAid, healthMap));
+        firstAid.addActionListener(new MenuWindowMechanics(firstAid, healthMap, null));
+        healthMap.addActionListener(new MenuWindowMechanics(firstAid, healthMap, null));
 
         menuPanel.add(firstAid);
         menuPanel.add(healthMap);

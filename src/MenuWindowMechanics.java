@@ -11,10 +11,12 @@ public class MenuWindowMechanics implements ActionListener {
 
     private JButton firstAid;
     private JButton healthMap;
+    private JButton nextB;
 
-    public MenuWindowMechanics(JButton firstAid, JButton healthMap) {
+    public MenuWindowMechanics(JButton firstAid, JButton healthMap, JButton nextB) {
         this.firstAid = firstAid;
         this.healthMap = healthMap;
+        this.nextB = nextB;
 
     }
 
@@ -40,9 +42,9 @@ public class MenuWindowMechanics implements ActionListener {
 
         if (e.getSource() == firstAid) {
             System.out.println("Otworzenie pierwszej pomocy");
-            FirstHelpWindow faw = null;
+            FirstHelpWindow1 faw = null;
             try {
-                faw = new FirstHelpWindow();
+                faw = new FirstHelpWindow1();
             } catch (URISyntaxException e1) {
                 // TODO Auto-generated catch block
                 e1.printStackTrace();
@@ -52,6 +54,19 @@ public class MenuWindowMechanics implements ActionListener {
             }
             faw.run();
         }
+        if (e.getSource() == nextB) {
+            FirstAidWindow2 FAW2 = null;
+            try {
+                FAW2 = new FirstAidWindow2();
+            } catch (URISyntaxException e1) {
+                // TODO Auto-generated catch block
+                e1.printStackTrace();
+            } catch (IOException e1) {
+                // TODO Auto-generated catch block
+                e1.printStackTrace();
+            }
+            
+            FAW2.run();}
 
     }
 
