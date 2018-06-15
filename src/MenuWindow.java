@@ -1,4 +1,7 @@
 
+import java.awt.Color;
+import java.awt.Graphics;
+
 import javax.swing.JButton;
 import javax.swing.JFrame;
 
@@ -14,12 +17,13 @@ public class MenuWindow extends JFrame{
         setTitle("Med Helper Kielce");
         
         firstHelp = new JButton("Pierwsza pomoc");
-        healthMap = new JButton("Mapa zdrowia");
+        healthMap = new JButton("");
        
         
         healthMap.setBounds(50,200,300,100);
         firstHelp.setBounds(50,350,300,100);
       
+        healthMap.setBackground(Color.CYAN);
         
         firstHelp.addActionListener(new MenuWindowMechanics(firstHelp,healthMap,settings));
         healthMap.addActionListener(new MenuWindowMechanics(firstHelp,healthMap,settings));
@@ -33,4 +37,5 @@ public class MenuWindow extends JFrame{
         
         setVisible(true);
     }
+   
 }
