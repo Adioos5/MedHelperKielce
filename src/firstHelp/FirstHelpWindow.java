@@ -1,26 +1,36 @@
 package firstHelp;
-import java.awt.Color;
 
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+import menu.MenuWindowBackgroundGraphics;
+import menu.MenuWindowMechanics;
 
 public class FirstHelpWindow extends JFrame {
 	
-	private JButton firstHelp;
-    private JButton healthMap;
-   
+
+    private JPanel menuPanel;
     
     public FirstHelpWindow() {
         
-        setBounds(500,100,1440,2560);
-        setTitle("Med Helper Kielce");
-        
+ 
+   
+
+
+
+
+        setResizable(false);
         
        
       
       
         
-        setVisible(true);
+        
+    }
+    public void run(){
+    	setVisible(true);
     }
    
 

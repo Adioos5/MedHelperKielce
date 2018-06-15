@@ -7,6 +7,7 @@ import java.net.URISyntaxException;
 
 import javax.swing.JButton;
 
+import firstHelp.FirstHelpWindow;
 import healthMap.HealthMapWindow;
 
 public class MenuWindowMechanics implements ActionListener {
@@ -42,6 +43,9 @@ public class MenuWindowMechanics implements ActionListener {
 
         if (e.getSource() == firstAid) {
             System.out.println("Otworzenie pierwszej pomocy");
+            FirstHelpWindow faw;
+            faw = new FirstHelpWindow();
+            faw.run();
         }
 
     }
