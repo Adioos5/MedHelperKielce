@@ -1,6 +1,8 @@
 package menu;
 
-import java.net.URL;
+import java.awt.image.BufferedImage;
+import java.io.IOException;
+import java.net.URISyntaxException;
 
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
@@ -15,7 +17,7 @@ public class MenuWindow extends JFrame {
    
     private JPanel menuPanel;
 
-    public MenuWindow() {
+    public MenuWindow() throws URISyntaxException, IOException {
 
         ImageIcon firstHelpBackground = new ImageIcon("images/text3353.png");
         ImageIcon healthMapBackground = new ImageIcon("images/mapa zdr.png");
