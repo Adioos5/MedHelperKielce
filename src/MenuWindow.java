@@ -1,5 +1,6 @@
 
 
+import java.awt.GridLayout;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.net.URISyntaxException;
@@ -29,9 +30,9 @@ public class MenuWindow extends JFrame {
 
         firstAid = new JButton("");
         healthMap = new JButton("");
-
-        healthMap.setBounds(30, 300, 300, 100);
+        
         firstAid.setBounds(30, 450, 300, 100);
+        healthMap.setBounds(30, 300, 300, 100);
 
         firstAid.setIcon(firstHelpBackground);
         healthMap.setIcon(healthMapBackground);
@@ -42,6 +43,7 @@ public class MenuWindow extends JFrame {
         menuPanel.add(firstAid);
         menuPanel.add(healthMap);
         menuPanel.setLayout(null);
+       
         
         setResizable(false);
     }
